@@ -27,8 +27,18 @@ const giveBirthday = (givenPerson) => {
   }
 }
 
-const marry = (single, single) => {
+const marry = (singleMan, singleWoman ) => {
+  singleMan.married = true;
+  singleWoman.married = true;
+  singleMan.spouseName = getFullName(singleWoman);
+  singleWoman.spouseName = getFullName(singleMan);
+}
 
+const divorce = (marriedMan, marriedWoman) => {
+  marriedMan.married = false;
+  marriedWoman.married = false;
+  delete marriedMan.spouseName;
+  delete marriedWoman.spouseName;
 }
 
 
