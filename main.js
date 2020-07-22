@@ -1,4 +1,35 @@
 // Your code here.
+const getFirstName = (firstName) => {
+  return firstName.firstName;
+}
+
+const getLastName = (lastName) => {
+  return lastName.lastName;
+}
+
+const getFullName = (fullName) => {
+  return fullName.firstName + ' ' + fullName.lastName;
+}
+
+const setFirstName = (obj, str) => {
+  return obj.firstName = str;
+}
+
+const setAge = (givenPerson, num) => {
+  return givenPerson.age = num;
+}
+
+const giveBirthday = (givenPerson) => {
+  if (!givenPerson.age) {
+    return givenPerson.age = 1;
+  } else {
+  return givenPerson.age + givenPerson.age ++;
+  }
+}
+
+const marry = (single, single) => {
+
+}
 
 
 
